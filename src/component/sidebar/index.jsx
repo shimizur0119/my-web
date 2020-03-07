@@ -1,4 +1,11 @@
 import React from "react";
+import {
+  BrowserRouter,
+  Route,
+  Link,
+  Redirect,
+  withRouter
+} from "react-router-dom";
 
 import {
   AppBar,
@@ -13,8 +20,12 @@ import {
 
 import useStyles from "../../style";
 
+import LIB from "../../lib";
+
 const SideList = props => {
   const classes = useStyles();
+  const listMap = LIB.list_map;
+  const list = Object.keys(listMap);
   return (
     <div
       role="presentation"
@@ -22,8 +33,15 @@ const SideList = props => {
       onClick={() => props.func(false)}
     >
       <List>
-        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-          <ListItem button key={text}>
+        {list.map((text, index) => (
+          <ListItem
+            button
+            key={text}
+            onClick={() => {
+              props.history.push(listMap[text].url);
+            }}
+            disabled={!listMap[text].act}
+          >
             <ListItemText primary={text} />
           </ListItem>
         ))}
@@ -35,9 +53,9 @@ const SideList = props => {
 const Sidebar = props => {
   return (
     <Drawer open={props.open} onClose={() => props.func(false)}>
-      <SideList func={props.func} />
+      <SideList func={props.func} history={props.history} />
     </Drawer>
   );
 };
 
-export default Sidebar;
+export default withRouter(Sidebar);

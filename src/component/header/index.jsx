@@ -13,7 +13,6 @@ import Sidebar from "../sidebar";
 
 const Header = props => {
   const [open, setOpen] = useState(false);
-
   return (
     <>
       <AppBar position="static">

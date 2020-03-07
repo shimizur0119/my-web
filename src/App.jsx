@@ -1,7 +1,9 @@
 import React from "react";
 import { BrowserRouter, Route, Link } from "react-router-dom";
+import { ThemeProvider } from "@material-ui/styles";
+import CssBaseline from "@material-ui/core/CssBaseline";
 import { MuiThemeProvider } from "@material-ui/core/styles";
-import theme from "./style/theme"
+import theme from "./style/theme";
 
 // material-ui
 import {
@@ -18,14 +20,20 @@ import Header from "./component/header";
 import Sidebar from "./component/sidebar";
 import Body from "./component/body";
 
+import useStyle from "./style/index";
+
 const App = () => {
+  const classes = useStyle();
   return (
-    <MuiThemeProvider theme={theme}>
-      <BrowserRouter>
-        <Header title="Shimizu's web site" />
-        <Body />
-      </BrowserRouter>
-    </MuiThemeProvider>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <div className={classes.bgimg}>
+        <BrowserRouter>
+          <Header title="Shimizu's web site" />
+          <Body />
+        </BrowserRouter>
+      </div>
+    </ThemeProvider>
   );
 };
 

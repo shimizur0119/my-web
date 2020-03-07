@@ -12,7 +12,10 @@ import {
 import Home from "../home";
 import Profile from "../profile";
 
+import useStyle from "../../style/index"
+
 const Body = () => {
+  const classes = useStyle()
   return (
     <Box m={3}>
       <Route path="/" render={()=><Redirect to="/home" />} />
