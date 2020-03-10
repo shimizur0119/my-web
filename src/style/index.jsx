@@ -8,6 +8,9 @@ const useStyles = makeStyles({
   sidebar: {
     width: 250
   },
+  sidebar_right: {
+    marginLeft: "auto"
+  },
   bgimg: {
     backgroundImage: `url(${gif4})`
   },

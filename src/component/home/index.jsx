@@ -9,6 +9,24 @@ import gif1 from "../../pic/boxs.gif";
 
 import useStyle from "../../style/index";
 
+const TitleBox = () => {
+  const classes = useStyle();
+  return (
+    <Grid item>
+      <Box
+        className={classes.opacity}
+        borderRadius={`borderRadius`}
+        boxShadow={20}
+        p={3}
+        bgcolor="secondary.dark"
+        width={1}
+      >
+        <Typography variant="h1" children="hello world!!" />
+      </Box>
+    </Grid>
+  );
+};
+
 const Home = () => {
   const classes = useStyle();
   return (
@@ -55,6 +73,15 @@ const Home = () => {
             <Typography variant="h1" children="hello world!!" />
           </Box>
         </Grid>
+        <TitleBox/>
+        <TitleBox/>
+        <TitleBox/>
+        <TitleBox/>
+        <TitleBox/>
+        <TitleBox/>
+        <TitleBox/>
+        <TitleBox/>
+        <TitleBox/>
       </Grid>
     </Box>
   );
