@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.js": "/static/js/main.e4fcb350.chunk.js",
-    "main.js.map": "/static/js/main.e4fcb350.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.721ebce5.js",
-    "runtime-main.js.map": "/static/js/runtime-main.721ebce5.js.map",
-    "static/js/2.bf604456.chunk.js": "/static/js/2.bf604456.chunk.js",
-    "static/js/2.bf604456.chunk.js.map": "/static/js/2.bf604456.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.ba46b1d4b4e2161c95832f1b2e260f99.js": "/precache-manifest.ba46b1d4b4e2161c95832f1b2e260f99.js",
-    "service-worker.js": "/service-worker.js",
-    "static/js/2.bf604456.chunk.js.LICENSE.txt": "/static/js/2.bf604456.chunk.js.LICENSE.txt",
-    "static/media/boxs.gif": "/static/media/boxs.70321a68.gif",
-    "static/media/boxs2.gif": "/static/media/boxs2.c109f3e7.gif",
-    "static/media/boxs3.gif": "/static/media/boxs3.98e29923.gif",
-    "static/media/gif_1.gif": "/static/media/gif_1.205fdc75.gif",
-    "static/media/giphy.gif": "/static/media/giphy.c7192261.gif"
+    "main.js": "./static/js/main.99293792.chunk.js",
+    "main.js.map": "./static/js/main.99293792.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.e450fec0.js",
+    "runtime-main.js.map": "./static/js/runtime-main.e450fec0.js.map",
+    "static/js/2.bf604456.chunk.js": "./static/js/2.bf604456.chunk.js",
+    "static/js/2.bf604456.chunk.js.map": "./static/js/2.bf604456.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.bba6cfee97fc8eea04475f46aeb7e2dc.js": "./precache-manifest.bba6cfee97fc8eea04475f46aeb7e2dc.js",
+    "service-worker.js": "./service-worker.js",
+    "static/js/2.bf604456.chunk.js.LICENSE.txt": "./static/js/2.bf604456.chunk.js.LICENSE.txt",
+    "static/media/boxs.gif": "./static/media/boxs.70321a68.gif",
+    "static/media/boxs2.gif": "./static/media/boxs2.c109f3e7.gif",
+    "static/media/boxs3.gif": "./static/media/boxs3.98e29923.gif",
+    "static/media/gif_1.gif": "./static/media/gif_1.205fdc75.gif",
+    "static/media/giphy.gif": "./static/media/giphy.c7192261.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.721ebce5.js",
+    "static/js/runtime-main.e450fec0.js",
     "static/js/2.bf604456.chunk.js",
-    "static/js/main.e4fcb350.chunk.js"
+    "static/js/main.99293792.chunk.js"
   ]
 }
