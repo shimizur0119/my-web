@@ -20,6 +20,7 @@ const Body = () => {
     <Box m={3}>
       <Route path="/" render={()=><Redirect to="/my-web/home" />} />
       <Route path="/my-web" render={()=><Redirect to="/my-web/home" />} />
+      <Route path="/my-web/home" render={()=><Redirect to="/my-web/home" />} />
       <Route path="/my-web/home" component={Home} />
       <Route path="/my-web/profile" component={Profile} />
     </Box>
